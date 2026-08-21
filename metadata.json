@@ -1,0 +1,6 @@
+{
+  "name": "Job Apply Mailer",
+  "description": "Send personalized job applications to multiple HR contacts.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
