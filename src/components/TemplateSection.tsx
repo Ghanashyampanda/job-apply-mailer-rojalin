@@ -42,7 +42,7 @@ export const TemplateSection: React.FC<TemplateSectionProps> = ({
       <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-3 gap-2">
         <div className="flex items-center space-x-2.5">
           <div className="w-8 h-8 rounded-lg bg-amber-50 text-amber-600 flex items-center justify-center font-bold text-sm">
-            4
+            5
           </div>
           <div>
             <h2 className="text-base font-semibold text-slate-800">Email Template</h2>

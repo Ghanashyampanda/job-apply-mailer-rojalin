@@ -53,7 +53,7 @@ export const ResumeSection: React.FC<ResumeSectionProps> = ({
     <div id="section-resume" className="bg-white rounded-2xl border border-slate-200/80 p-5 shadow-sm space-y-4">
       <div className="flex items-center space-x-2.5 border-b border-slate-100 pb-3">
         <div className="w-8 h-8 rounded-lg bg-purple-50 text-purple-600 flex items-center justify-center font-bold text-sm">
-          3
+          4
         </div>
         <div>
           <h2 className="text-base font-semibold text-slate-800">Resume & Attachments</h2>

@@ -55,7 +55,7 @@ invalid-email-address`;
       <div className="flex flex-col sm:flex-row sm:items-center justify-between border-b border-slate-100 pb-3 gap-2">
         <div className="flex items-center space-x-2.5">
           <div className="w-8 h-8 rounded-lg bg-emerald-50 text-emerald-600 flex items-center justify-center font-bold text-sm">
-            2
+            3
           </div>
           <div>
             <h2 className="text-base font-semibold text-slate-800">HR Email List</h2>
@@ -150,7 +150,7 @@ invalid-email-address`;
           {/* Batch Notice if > 30 */}
           {selectedValidCount > 30 && (
             <div className="bg-blue-50 border border-blue-200 rounded-xl p-3 flex items-start space-x-2.5 text-xs text-blue-800">
-              <ShieldAlert className="w-4 h-4 text-blue-600 flex-shrink-0 mt-0.5" />
+              <ShieldAlert className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />
               <div>
                 <span className="font-semibold">{selectedValidCount} valid recipients selected.</span> Batch limit is 30 recipients. The first 30 will be sent in this run, and remaining {selectedValidCount - 30} will remain pending for your next batch.
               </div>

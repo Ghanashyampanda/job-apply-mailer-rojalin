@@ -235,7 +235,8 @@ app.get("/api/gmail-profile", async (req, res) => {
 });
 
 async function startServer() {
-  const isDev = process.env.NODE_ENV === "development" || (!process.env.NODE_ENV && Boolean(import.meta?.url?.endsWith(".ts")));
+  const isProductionBuild = typeof __filename !== "undefined" && __filename.endsWith(".cjs");
+  const isDev = process.env.NODE_ENV === "development" || (process.env.NODE_ENV !== "production" && !isProductionBuild);
 
   if (isDev) {
     const vite = await createViteServer({

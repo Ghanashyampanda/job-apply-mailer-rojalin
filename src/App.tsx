@@ -35,6 +35,7 @@ import { initAuth, googleSignIn, logoutAccount, getAccessToken } from './lib/fir
 
 import { Header } from './components/Header';
 import { MyDetailsSection } from './components/MyDetailsSection';
+import { JobDetailsSection } from './components/JobDetailsSection';
 import { HrEmailSection } from './components/HrEmailSection';
 import { ResumeSection } from './components/ResumeSection';
 import { TemplateSection } from './components/TemplateSection';
@@ -540,7 +541,13 @@ export default function App() {
           savedTime={detailsSavedTime}
         />
 
-        {/* 2. HR Email List Section */}
+        {/* 2. Job Details Section */}
+        <JobDetailsSection
+          details={jobDetails}
+          onChange={handleJobDetailsChange}
+        />
+
+        {/* 3. HR Email List Section */}
         <HrEmailSection
           rawText={rawHrEmails}
           onRawTextChange={setRawHrEmails}
